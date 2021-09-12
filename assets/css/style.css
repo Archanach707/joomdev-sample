@@ -228,7 +228,7 @@ img {
 }
 
 .workout-page {
-  background: linear-gradient(to bottom, #191921 0%, #191921 70%, #FEF2EE 70%, #FEF2EE 100%);
+  background: linear-gradient(to bottom, #191921 0%, #191921 75%, #FEF2EE 75%, #FEF2EE 100%);
   min-height: 100vh;
   display: flex;
 }
@@ -242,41 +242,49 @@ img {
   padding-left: 15px;
 }
 
+.workout-container {
+  display: flex;
+  align-items: center;
+}
+
 .banner-content {
   color: #fff;
   font-family: 'Poppins';
-  padding: 17% 0 8%;
+  padding: 16% 0 8%;
+  width: 100%;
 }
 
 .banner-content-inner {
   position: relative;
+  margin-bottom: 120px;
 }
 
 .banner-content .main-heading {
   font-family: 'Russo One';
-  font-size: 68px;
+  font-size: 26px;
   max-width: 845px;
   margin-right: 30px;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 .banner-content .cta {
   background: transparent;
   border: 3px solid #F35E2F;
-  font-size: 18px;
-  padding: 10px 25px;
+  font-size: 14px;
+  padding: 0.625rem 1.5625rem;
   text-transform: uppercase;
   color: #fff;
 }
 
 .banner-content .social-link {
   display: flex;
-  font-size: 18px;
+  font-size: 14px;
+  line-height: 1;
   transform: rotate(270deg);
   transform-origin: right;
   position: absolute;
-  right: 0;
-  top: -70px;
+  right: 10px;
+  top: -30px;
   margin-bottom: 0;
 }
 .banner-content .social-link .list-item {}
@@ -301,14 +309,60 @@ img {
   width: 1px;
   height: 29%;
   position: absolute;
-  top: 80px;
+  top: 29%;
   left: 0;
   background: #fff;
 }
 
 .banner-hero .hero-img {
-  max-width: 840px;
+  max-width: 95%;
 }
 
+/** START Media quearies **/
+@media (min-width: 768px) {
+  .banner-content .main-heading {
+    font-size: 54px;
+    margin-bottom: 40px;
+  }
+  .banner-content .cta {
+    font-size: 16px;
+  }
+  
+  .banner-content .social-link {
+    font-size: 16px;
+    top: -50px;
+  }
+
+  .banner-content-inner {
+    margin-bottom: 90px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .banner-content .main-heading {
+    font-size: 68px;
+    margin-bottom: 40px;
+  }
+  .banner-content .cta {
+    font-size: 18px;
+  }
+  
+  .banner-content .social-link {
+    font-size: 18px;
+    top: -70px;
+  }
+
+  .banner-content-inner {
+    margin-bottom: 0;
+  }
+
+  .banner-hero .hero-img {
+    max-width: 840px;
+  }
+}
+
+/** END Media quearies **/
+
 /** END Main CSS **/
+
 
