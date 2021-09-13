@@ -363,6 +363,105 @@ img {
 
 /** END Media quearies **/
 
+
+/** START Team page **/
+.team-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.team-content {
+  display: flex;
+  margin-bottom: 85px;
+}
+.team-content .content {
+  width: 48%;
+  margin-right: 1%;
+  margin-left: 1%;
+}
+.team-content .design-text:before {
+  content: '';
+  width: 54px;
+  height: 1px;
+  background-color: #CC9B55;
+  position: absolute;
+  left: 0;
+  top: 12px;
+}
+.team-content .content .design-text {
+  display: inline-flex;
+  position: relative;
+  padding-left: 64px;
+  text-transform: uppercase;
+}
+.team-content .content .page-heading {
+  font-family: 'DM Serif Display';
+  color: #CC9B55;
+  font-size: 54px;
+}
+
+.team-members {
+  display: flex;
+  justify-content: space-between;
+}
+
+.team-members > .list-item {
+  position: relative;
+  transition: all ease-in-out 300ms;
+}
+.team-members > .list-item:hover .social-media {
+  opacity: 1;
+  z-index: 1;
+}
+.team-members .profile-pic {
+  max-width: 255px;
+}
+.team-members .profile-info {
+  background: #CC9B55;
+  margin-right: 25px;
+  padding: 10px 20px;
+  color: #fff;
+}
+.team-members .profile-info .member-name {
+  font-family: 'DM Serif Display';
+  font-size: 22px;
+}
+.team-members .profile-info .member-role {}
+
+.social-media {
+  width: 45px;
+  background: #fff;
+  margin-bottom: 0;
+  position: absolute;
+  right: 0;
+  top: 120px;
+  z-index: -1;
+  text-align: center;
+  opacity: 0;
+}
+.team-members .social-media > .list-item {
+
+}
+.team-members .social-media .social-media-link {
+  color: #616161;
+  display: block;
+  padding: 7px 10px;
+  transition: all ease-in-out 300ms;
+}
+.team-members .social-media .social-media-link:hover {
+  color: #cc9b55;
+}
+
+/** END Team page **/
+
+/** START Media quearies **/
+
+
+
+/** END Media quearies **/
+
+
 /** END Main CSS **/
 
 
